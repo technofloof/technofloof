@@ -1,0 +1,18 @@
+class student:  #collection of data members and data funtions
+    """A class representing a student. n = name string, a = age float"""
+    def __init__(self,n,a):  #instatiate of the object and find the documentation string
+        self.full_name = n
+        self.age = a
+    def get_age(self):
+        return self.age  #age of this object in this case self
+
+
+#Defining an object
+f = student("Bob Smith", 23)
+#Retreiving the full_name attribute from the object
+print(f.full_name)
+#Calling the get_age() method by using the f object
+print(f.get_age())
+#Another method to retreive the attributes from the object
+print(getattr(f, "full_name"))
+print(getattr(f, "age"))
