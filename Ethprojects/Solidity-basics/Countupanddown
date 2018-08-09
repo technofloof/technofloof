@@ -1,0 +1,23 @@
+pragma solidity ^0.4.23;
+
+contract SimpleCounter{
+    
+    uint256 counter;
+    
+    constructor() public {
+        counter = 0;
+    }
+    
+    function getCounter() public view returns(uint){
+        return counter;
+    }
+    
+    function increment(uint _increment) public {
+        counter += _increment;
+    }
+    
+    function decrement() public {
+        counter--;
+    }
+    
+}
